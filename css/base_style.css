@@ -63,6 +63,11 @@ header h1
     max-width: 700px;
 }
 
+header img
+{
+    width: 10rem;
+}
+
 header
 {
     padding: 1em 2em 0 2em;
