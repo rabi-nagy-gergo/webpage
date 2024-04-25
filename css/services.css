@@ -1,0 +1,71 @@
+/*------services.css -> services.html------*/
+
+.services
+{
+    display: flex block;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+div.service
+{
+    margin: 1rem;
+    border: 3px solid black;
+    padding: 0 !important;
+}
+
+.service article
+{
+    padding: 1rem;
+}
+
+.service img
+{
+    max-width: 20rem;
+}
+
+.service h3
+{
+    margin: 0;
+    padding: .5rem 0 1rem 0;
+}
+
+.service p
+{
+    font-size: 1rem;
+    padding: 0;
+    text-align: left !important;
+}
+
+div.service
+{
+    width:min-content;
+}
+
+@media print
+{
+    .service
+    {
+        display: flex;
+        width: 100% !important;
+        border: none !important;
+        page-break-inside: avoid !important;
+    }
+
+    .service img
+    {
+        float: left !important;
+    }
+
+    .service article 
+    {
+        float: right !important;
+        padding-top: 0;
+    }
+
+    .service h3
+    {
+        padding-top: .2rem;
+    }
+}

@@ -1,0 +1,57 @@
+/*------prices.css -> prices.html------*/
+
+table
+{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.hidden
+{
+    display: none;
+}
+
+table tr:first-of-type th, table tr:first-of-type th tr
+{
+    background-color: rgb(193, 209, 214);
+}
+
+table th:nth-child(2), table th:nth-child(3), table td:nth-child(2), table td:nth-child(3)
+{
+    text-align: center;
+}
+
+table th
+{
+    vertical-align: middle;
+}
+
+caption
+{
+    margin-top: 1rem;
+}
+
+details p
+{
+    padding-left: 1.2rem;
+}
+
+@media print 
+{
+
+    table
+    {
+        font-size: 1rem;
+    }
+
+    table details
+    {
+        display: none;
+    }
+
+    .hidden
+    {
+        display: block !important;
+    }
+
+}

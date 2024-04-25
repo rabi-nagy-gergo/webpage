@@ -1,0 +1,74 @@
+/*------appointment.css -> appointment.html------*/
+
+#form
+{
+    padding-bottom: 2rem;
+}
+
+legend:first-of-type
+{
+    margin: 0 0 .5rem 0;
+}
+
+legend
+{
+    margin: 1rem 0 .5rem 0;
+    text-align: left;
+}
+
+p
+{
+    text-align: left !important;
+}
+
+input
+{
+    margin-bottom: .5rem;
+}
+
+input.btn
+{
+    margin-top: 1rem;
+}
+
+#form textarea, #form select, #form input:not([type="radio"], [type="checkbox"], .btn)
+{
+    width: 90%;
+}
+
+.buttons
+{
+    display: flex;
+    width: 50%;
+    min-width: 10rem;
+    justify-content: space-between;
+}
+
+.btn
+{
+    width: 45%;
+}
+
+@media print
+{   
+    fieldset
+    {
+        page-break-inside: avoid;
+        width: 100% !important;
+    }
+
+    #form
+    {
+        width: 100% !important;
+    }
+
+    #form .col-sm-12.col-md-6
+    {
+        flex-flow: column wrap !important;
+    } 
+
+    #form .buttons
+    {
+        display: none;
+    }
+}

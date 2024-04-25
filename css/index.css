@@ -1,0 +1,90 @@
+/*------index.css -> index.html------*/
+
+main div.sale img
+{
+    width: 100%;
+    min-width: 300px;
+}
+
+.review-area
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.review-box .top h3
+{
+    margin: 0;
+    padding-left: .5rem; 
+}
+
+.review-box .top ul {
+    padding: .5rem;
+    display: flex;
+    list-style: none;
+}
+
+.review-box .top ul li {
+    padding-left: 4px;
+}
+
+.review-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 2px black;
+    border-radius: 10px;
+    transition: all .2s linear;
+}
+
+.review-box:hover {
+    border-color: rgb(9, 10, 93);
+    transform: scale(1.01);
+    background-color: rgb(193, 209, 214);
+    box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
+.checked {
+    color: orange;
+}
+
+.time p
+{
+    text-align: right;
+    vertical-align: bottom;
+}
+
+@media print
+{
+    #ratings
+    {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    #ratings .review-box
+    {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+
+    #ratings .review-box .top .name
+    {
+        display: flex;
+        flex: 100%
+    }
+
+    div.sale
+    {
+        display: flex;
+        width: 50%;
+        flex-flow: row wrap;
+    }
+}
