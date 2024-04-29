@@ -2,7 +2,7 @@
 
 .services
 {
-    display: flex block;
+    display: flex;
     justify-content: space-around;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -22,7 +22,7 @@ div.service
 
 .service img
 {
-    max-width: 20rem;
+    width: 17.5rem;
 }
 
 .service h3

@@ -185,11 +185,27 @@ footer h3
 }
 
 @media only screen and (max-width: 500px) {
-    .content, footer
+    .content main p, ul
+    {
+        font-size: 1rem;
+    }
+
+    header h1
+    {
+        font-size: 2rem;
+    }
+    
+    .content
     {
         padding-right: 2rem !important;
         padding-left: 2rem !important;
     } 
+
+    footer
+    {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
 }
 
 @media print
