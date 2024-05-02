@@ -40,7 +40,7 @@ div.service
 
 div.service
 {
-    width:min-content;
+    width: min-content;
 }
 
 @media print
@@ -48,7 +48,7 @@ div.service
     .service
     {
         display: flex;
-        width: 100% !important;
+        width: 95% !important;
         border: none !important;
         page-break-inside: avoid !important;
     }

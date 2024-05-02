@@ -184,14 +184,6 @@ footer h3
     text-align: center;
 }
 
-@media only screen and (max-width: 1200px)
-{
-    nav#styleswitch
-    {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 500px) {
     .content main p, ul
     {
