@@ -11,16 +11,16 @@ body.large, body.large table, body.large p, body.large ul
     line-height: 6rem !important;
 }
 
-body.large .navbar a
+/*body.large .navbar a
 {
     font-size: 2rem !important;
-}
+}*/
 
-body.large header h1
+/*body.large header h1
 {
     font-size: 8rem !important;
     min-width: 100% !important;
-}
+}*/
 
 body.large h2, body.large #form legend,  body.large h3, body.large #form .btn
 {

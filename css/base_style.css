@@ -93,38 +93,38 @@ header
 
 .navbar
 {
-    padding: .5em 0 .5em 0;
+    padding: 0;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     font-size: 1.3em;
-    border-radius: 20px;
+    background-color: rgb(193, 209, 214) !important;
 }
 
 .navbar .navbar-nav
 {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+}
+
+.navbar .container-fluid
+{
+    padding: 0;
+}
+
+.navbar .nav-link
+{
+    text-align: center;
+    width: 20%;
 }
 
 .navbar .nav-link.active
 {
-    text-decoration: underline;
+    background-color: rgb(100, 200, 200);
 }
 
-.navbar .navbar-brand
+.navbar .navbar-brand, .navbar-logo 
 {
-    margin: 0;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    background-color: rgb(182, 182, 254);
-    border-radius: 10px;
-}
-
-.navbar .show a
-{
-    text-indent: 3rem;
-    transition: all .1s linear;
+    display: none;
 }
 
 main .col-sm-12.col-md-6, main .col
@@ -184,7 +184,8 @@ footer h3
     text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) 
+{
     .content main p, ul
     {
         font-size: 1rem;
@@ -205,6 +206,34 @@ footer h3
     {
         padding-right: 1rem !important;
         padding-left: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 767px) 
+{
+    .navbar-brand
+    {
+        display: flex !important;
+        font-size: 1.75rem;
+        font-family: "Concert One", "Impact", "Arial", sans-serif;
+        margin: 0;
+        padding: 0 1rem 0 0;
+    }
+
+    .navbar-nav
+    {
+        padding-top: .5rem;
+    }
+
+    .navbar .container-fluid
+    {
+        justify-content: center;
+        padding: .5rem 0;
+    }
+
+    .navbar .nav-link
+    {
+        width: 100%;
     }
 }
 
