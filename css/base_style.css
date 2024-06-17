@@ -269,7 +269,7 @@ footer h3
 
     header
     {
-        padding-bottom: 1rem;
+        display: none;
     }
 
     section, article, footer, header

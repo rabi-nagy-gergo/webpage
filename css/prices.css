@@ -4,6 +4,7 @@ table
 {
     font-size: 1.2rem;
     margin-top: 2rem;
+    min-width: 520px;
 }
 
 .hidden
@@ -24,6 +25,11 @@ table th:nth-child(2), table th:nth-child(3), table td:nth-child(2), table td:nt
 table th
 {
     vertical-align: middle;
+}
+
+.table-container
+{
+    overflow-x: auto;
 }
 
 caption

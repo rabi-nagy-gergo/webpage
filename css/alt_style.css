@@ -1,36 +1,130 @@
 /*------alt_style.css -> general rules------*/
 
+body.large .content a:link 
+{
+    color: cyan;
+}
+
+body.large .content a:visited
+{
+    color: lightgreen;
+}
+
+body.large .content a:hover
+{
+    color: red;
+}
+
+body.large .content a:active
+{
+    color: #f30de0;
+}
+
 body.large .container
 {
     max-width: 100%;
+    background-color: black;
+    color: yellow;
+}
+
+body.large header
+{
+    padding: 0 4rem;
+}
+
+body.large header h1 
+{
+    font-size: 4rem;
+}
+
+body.large header img 
+{
+    background-color: white;
+}
+
+body.large .navbar .container-fluid
+{
+    background-color: grey;
+}
+
+body.large .navbar-nav
+{
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem 0;
+    background-color: black;
+}
+
+body.large .navbar-brand
+{
+    display: none;
+    color: yellow;
+    font-size: 3rem;
+    font-family: "Concert One", "Impact", "Arial", sans-serif;
+    margin: 0;
+    padding: 0 1rem 0 0;
+}
+
+body.large .navbar .container-fluid
+{
+    justify-content: center;
+    padding: 0;
+}
+
+body.large .navbar .nav-link
+{
+    width: 100%;
+    font-size: 2.4rem;
+    color: yellow;
+}
+
+body.large .navbar .nav-link.active
+{
+    background-color: darkblue;
+}
+
+body.large .content
+{
+    padding: 0 4rem 4rem 4rem;
 }
 
 body.large, body.large table, body.large p, body.large ul
 {
-    font-size: 2.5rem !important;
-    line-height: 6rem !important;
-}
-
-/*body.large .navbar a
-{
     font-size: 2rem !important;
-}*/
-
-/*body.large header h1
-{
-    font-size: 8rem !important;
-    min-width: 100% !important;
-}*/
+    line-height: 4rem !important;
+}
 
 body.large h2, body.large #form legend,  body.large h3, body.large #form .btn
 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     margin: 2.5rem 0 2.5rem 0 !important;
 }
 
 body.large p, body.large ul 
 {
     text-align: left !important;
+}
+
+body.large figcaption
+{
+    color: yellow;
+}
+
+body.large .fa
+{
+    color: grey;
+}
+
+body.large .fa.checked
+{
+    color: yellow;
+}
+
+body.large footer
+{
+    padding: 0 4rem 0 4rem;
+    background-color: rgb(50,50,50);
+    color: yellow;
 }
 
 body.large footer h3
@@ -50,13 +144,19 @@ body.large .service
 {
     display: grid;
     border: none;
+    padding-bottom: 2rem !important;
+}
+
+body.large div:last-child
+{
+    padding-bottom: 0 !important;
 }
 
 body.large .service img
 {
     display: block;
     justify-self: center;
-    max-width: 75% !important;
+    width: 50% !important;
 }
 
 body.large input[type="radio"], body.large input[type="checkbox"]
@@ -66,7 +166,48 @@ body.large input[type="radio"], body.large input[type="checkbox"]
     height: .7em;
 }
 
+body.large table th, body.large table td 
+{
+    background-color: rgb(20,20,20);
+    color: yellow;
+}
+
+body.large details summary, body.large details p
+{
+    color: yellow;
+} 
+
 body.large .maps
 {
     min-height: 600px;
+}
+
+@media only screen and (max-width: 700px)
+{
+    body.large header
+    {
+        padding: 0 2rem;
+    }
+
+    body.large .content
+    {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    body.large footer
+    {
+        padding: 0 2rem 0 2rem;
+    }
+
+    body.large .service img
+    {
+        width: 80% !important;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    body.large footer li
+    {
+        font-size: 1.7rem;
+    }
 }
